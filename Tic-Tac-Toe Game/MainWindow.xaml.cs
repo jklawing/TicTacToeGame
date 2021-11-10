@@ -4,7 +4,6 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Collections;
 using System;
-using SimpleLogger;
 
 namespace Tic_Tac_Toe_Game
 {
@@ -37,8 +36,6 @@ namespace Tic_Tac_Toe_Game
 
       private Stack GameHistory { get; set; }
 
-      public Logger logger;
-
       #endregion
 
       #region Constructor
@@ -48,8 +45,6 @@ namespace Tic_Tac_Toe_Game
       /// </summary>
       public MainWindow()
       {
-         logger = new Logger(@"C:\Users\lawin\Desktop\log.txt");
-
          InitializeComponent();
 
          NewGame();
